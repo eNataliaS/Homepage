@@ -1,3 +1,5 @@
+console.log("Cześć Developer! Pzdr600")
+
 let headerButton = document.querySelector(".js-button");
 let header = document.querySelector(".js-header");
 let lowTitle = document.querySelector(".js-lowTitle");
