@@ -17,5 +17,4 @@ https://enatalias.github.io/Homepage/
 =======
 
 ## Short prezentation of page:
->>>>>>> 03d017c4ccd13003c53ccbb5124890a9dfa7906a
 ![gif](images/AnimationOfHomepage.gif)
