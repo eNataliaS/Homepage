@@ -13,4 +13,4 @@ https://enatalias.github.io/Homepage/
 - BEM
 
 ## Short gif of my page
-![gif](AnimationOfHomepage.gif)
+![gif](images/AnimationOfHomepage.gif)
