@@ -12,9 +12,5 @@ https://enatalias.github.io/Homepage/
 - JS
 - BEM
 
-<<<<<<< HEAD
-## Short gif of my page
-=======
-
 ## Short prezentation of page:
 ![gif](images/AnimationOfHomepage.gif)
