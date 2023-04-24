@@ -1,0 +1,17 @@
+.main {
+    background-color: #dce0e6;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+.main__removeTableButton {
+    margin: 10px 0px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #1e2939;
+    color: #ece6e6fa;
+    border: 4px outset white;
+    border-radius: 10px;
+    padding: 5px;
+}
