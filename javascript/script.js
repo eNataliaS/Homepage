@@ -1,4 +1,7 @@
-console.log("Cześć Developer! Pzdr600!")
+function welcome () {
+console.log("Cześć Developer! Pzdr600!")}
+
+welcome();
 
 let headerButton = document.querySelector(".js-button");
 let header = document.querySelector(".js-header");
