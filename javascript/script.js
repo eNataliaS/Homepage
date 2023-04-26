@@ -1,35 +1,41 @@
-function welcome () {
-console.log("Cześć Developer! Pzdr600!")}
+{
+  const welcome = () => {
+    console.log("Cześć Developer! Pzdr600!");
+  };
 
-welcome();
+  const toggleBackground = () => {
+    const header = document.querySelector(".js-header");
+    const lowTitle = document.querySelector(".js-lowTitle");
+    const title = document.querySelector(".js-title");
+    const themeName = document.querySelector(".js-themeName");
+    const mainPart = document.querySelector(".js-main");
+    const link = document.querySelector(".js-link");
+    header.classList.toggle("darkTheme");
+    lowTitle.classList.toggle("darkTheme");
+    title.classList.toggle("darkTheme");
+    mainPart.classList.toggle("darkTheme");
+    link.classList.toggle("darkTheme");
 
-let headerButton = document.querySelector(".js-button");
-let header = document.querySelector(".js-header");
-let lowTitle = document.querySelector(".js-lowTitle");
-let title = document.querySelector(".js-title");
-let themeName = document.querySelector(".js-themeName");
-let container = document.querySelector(".js-container");
-let mainPart = document.querySelector(".js-main");
-let link = document.querySelector(".js-link");
+    themeName.innerText = title.classList.contains("darkTheme")
+      ? "jasny"
+      : "ciemny";
+  };
 
-headerButton.addEventListener("click", () => {
-  header.classList.toggle("darkTheme");
-  lowTitle.classList.toggle("darkTheme");
-  title.classList.toggle("darkTheme");
-  mainPart.classList.toggle("darkTheme");
-  link.classList.toggle("darkTheme");
+  const removeButtonClick = () => {
+    const table = document.querySelector(".js-table");
+    table.remove();
+    removeTableButton.remove();
+  };
 
-  themeName.innerText = title.classList.contains("darkTheme")
-    ? "jasny"
-    : "ciemny";
-});
+  const removeTableButton = document.querySelector(".js-removeTableButton");
 
-let removeTableButton = document.querySelector(".js-removeTableButton");
-let table = document.querySelector(".js-table");
+  const init = () => {
+    const headerButton = document.querySelector(".js-button");
+    headerButton.addEventListener("click", toggleBackground);
+    removeTableButton.addEventListener("click", removeButtonClick);
 
-removeTableButton.addEventListener("click", () => {
-  table.remove();
-  removeTableButton.remove();
-});
+    welcome();
+  };
 
-
+  init();
+}
