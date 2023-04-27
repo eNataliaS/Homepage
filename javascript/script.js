@@ -10,6 +10,7 @@
     const themeName = document.querySelector(".js-themeName");
     const mainPart = document.querySelector(".js-main");
     const link = document.querySelector(".js-link");
+
     header.classList.toggle("darkTheme");
     lowTitle.classList.toggle("darkTheme");
     title.classList.toggle("darkTheme");
@@ -23,14 +24,16 @@
 
   const removeButtonClick = () => {
     const table = document.querySelector(".js-table");
+    const removeTableButton = document.querySelector(".js-removeTableButton");
+
     table.remove();
     removeTableButton.remove();
   };
 
-  const removeTableButton = document.querySelector(".js-removeTableButton");
-
   const init = () => {
     const headerButton = document.querySelector(".js-button");
+    const removeTableButton = document.querySelector(".js-removeTableButton");
+
     headerButton.addEventListener("click", toggleBackground);
     removeTableButton.addEventListener("click", removeButtonClick);
 
